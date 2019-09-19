@@ -9,13 +9,13 @@ pipeline {
         }
         stage('build'){
             steps {
-                sh'''cd TestJenkinsFile/src/helloWorld/
+                sh'''cd TestJenkinsFile/src/Main/
                  javac Main.java'''
             }
         }
         stage('run'){
             steps {
-                sh "cd TestJenkinsFile/src/ && java helloWorld/Main"
+                sh "cd TestJenkinsFile/Main/ && java helloWorld/Main"
             }
         }
     }
