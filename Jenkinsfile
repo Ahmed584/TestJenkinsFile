@@ -15,7 +15,7 @@ pipeline {
         }
         stage('run'){
             steps {
-                sh "cd TestJenkinsFile/Main/ && java helloWorld/Main"
+                sh "cd TestJenkinsFile/src/ && java helloWorld/Main"
             }
         }
     }
